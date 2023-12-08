@@ -86,3 +86,11 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Function to calculate the total number of months in the dataset
+function calculateTotalMonths(data) {
+  return data.length;
+}
+// Calculate total number of months in the dataset
+const totalMonths = calculateTotalMonths(finances);
+console.log("Total Months:", totalMonths);
