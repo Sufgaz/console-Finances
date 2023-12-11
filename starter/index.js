@@ -94,3 +94,30 @@ function calculateTotalMonths(data) {
 // Calculate total number of months in the dataset
 const totalMonths = calculateTotalMonths(finances);
 console.log("Total Months:", totalMonths);
+
+//
+Math.floor(Math.max(finances));
+console.log ("Greatest Increase in Profits/Losses:");
+
+//
+console.log("Greatest decrease in Profits/Losses:");
+
+//
+console.log("Total:");
+
+// Function to calculate the average change in Profit/Losses
+function calculateAverageChange(data) {
+  let totalChange = 0;
+  for (let i = 1; i < data.length; i++) {
+    let change = data[i][1] - data[i - 1][1];
+    totalChange += change;
+  }
+  // Calculate the average change
+  let numberOfChanges = data.length - 1;
+  let averageChange = totalChange / numberOfChanges;
+  return averageChange;
+}
+const averageChange = calculateAverageChange(finances);
+
+// Print the average change to the console
+console.log("Average Change:", averageChange);
