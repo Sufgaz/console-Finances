@@ -96,14 +96,24 @@ const totalMonths = calculateTotalMonths(finances);
 console.log("Total Months:", totalMonths);
 
 //
-Math.floor(Math.max(finances));
+
 console.log ("Greatest Increase in Profits/Losses:");
 
 //
 console.log("Greatest decrease in Profits/Losses:");
 
-//
-console.log("Total:");
+//Calculating Total
+function calculateTotal(data) {
+  let total = 0;
+  for (let i = 0; i< data,length; i++) {
+    let change = data[i][1];
+  }
+  return total;
+}
+
+const totalProfitLoss = calculateTotal(finances);
+
+console.log("Total:", totalProfitLoss);
 
 // Function to calculate the average change in Profit/Losses
 function calculateAverageChange(data) {
